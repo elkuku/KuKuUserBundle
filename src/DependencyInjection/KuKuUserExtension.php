@@ -18,11 +18,11 @@ class KuKuUserExtension extends Extension
         $configuration = $this->getConfiguration($configs, $container);
         $config = $this->processConfiguration($configuration, $configs);
 
-        $definition = $container->getDefinition('knpu_lorem_ipsum.knpu_ipsum');
-        $definition->setArgument(0, $config['unicorns_are_real']);
-        $definition->setArgument(1, $config['min_sunshine']);
+        // $definition = $container->getDefinition('kukuknpu_lorem_ipsum.knpu_ipsum');
+        // $definition->setArgument(0, $config['unicorns_are_real']);
+        // $definition->setArgument(1, $config['min_sunshine']);
 
-        var_dump($config);die;
+        // var_dump($config);die;
     }
 
     public function getAlias(): string
