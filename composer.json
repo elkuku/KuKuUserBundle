@@ -1,0 +1,32 @@
+{
+    "name": "elkuku/user-bundle",
+    "description": "A user admninistrator for the Symfony framework",
+    "type": "symfony-bundle",
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Nikolai Plath",
+            "email": "der.el.kuku@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "symfony/framework-bundle": "5.*",
+        "symfony/browser-kit": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "KuKu\\UserBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KuKu\\UserBundle\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "symfony/phpunit-bridge": "^5.3",
+        "symfony/twig-bundle": "^5.3"
+    }
+}
