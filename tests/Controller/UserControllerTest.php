@@ -45,12 +45,12 @@ class KuKuControllerKernel extends Kernel
         ];
     }
 
-    protected function configureRoutes(RoutingConfigurator $routes)
+    protected function configureRoutes(RoutingConfigurator $routes): void
     {
         $routes->import(__DIR__.'/../../src/Resources/config/routes.xml')->prefix('/user');
     }
 
-    protected function configureContainer(ContainerBuilder $c, LoaderInterface $loader)
+    protected function configureContainer(ContainerBuilder $c, LoaderInterface $loader): void
     {
         $c->loadFromExtension('framework', [
             'secret' => 'asdqwe',
