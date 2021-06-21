@@ -1,3 +1,3 @@
-A user bundle for Symfony
+A user bundle for Symfony.
 
 **WIP!**
